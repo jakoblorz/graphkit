@@ -1,0 +1,15 @@
+html, body {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 16px;
+  line-height: 1.25em;
+}
+
+body > div {
+  display: block;
+  width: 100%;
+}
+
+section.svg svg {
+  width: 100%!important;
+  height: 100%!important;
+}

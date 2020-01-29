@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Graphkit</title>
+  {{range .Stylesheets }}
+  <link rel="stylesheet" href="/{{.}}" crossorigin />{{end}}
+  {{range .Dependencies }}
+  <script src="/{{.}}"></script>{{end}}
+</head>
+
+<body id="body"></body>
+
+{{range .Scripts }}
+<script type="text/babel" src="/{{.}}"></script>{{end}}
+
+</html>
